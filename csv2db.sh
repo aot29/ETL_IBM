@@ -26,4 +26,4 @@ tr ":" "," < extracted-data.txt > transformed-data.csv
 echo "Loading data"
 
 export PGPASSWORD=XXXXXXXXXX
-echo "\c template1;\COPY users  FROM '/home/project/transformed-data.csv
+echo "\c template1;\COPY users  FROM '/home/project/transformed-data.csv" | psql --username=postgres --host=postgres
