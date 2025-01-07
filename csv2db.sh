@@ -25,5 +25,5 @@ tr ":" "," < extracted-data.txt > transformed-data.txt
 
 echo "Loading data"
 
-export PGPASSWORD="CUyyzD2S6HF1005AquSHWQVo;"
+export PGPASSWORD=XXXXXXXXXX
 echo "\c template1;\COPY users  FROM '/home/project/transformed-dat>
