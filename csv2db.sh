@@ -19,11 +19,11 @@ echo "Transforming data"
 
 # replace colons with commas
 
-tr ":" "," < extracted-data.txt > transformed-data.txt
+tr ":" "," < extracted-data.txt > transformed-data.csv
 
 # Load
 
 echo "Loading data"
 
 export PGPASSWORD=XXXXXXXXXX
-echo "\c template1;\COPY users  FROM '/home/project/transformed-dat>
+echo "\c template1;\COPY users  FROM '/home/project/transformed-data.csv
