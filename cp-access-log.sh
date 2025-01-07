@@ -11,5 +11,5 @@ cut -d"#" -f1-4 web-server-access-log.txt > extracted-data.txt
 tr "#" "," < extracted-data.txt > transformed-data.csv
 
 # Load
-export PGPASSWORD=hE95xAgGb4G0FVDLtdtyqRwi
+export PGPASSWORD=XXXXXXXXXXXXX
 echo "\c template1;\COPY access_log(timestamp, latitude, longitude, visitorid) FROM '/home/project/transformed-data.csv' DELIMITER ',' CSV HEADER;" | psql --username=postgres --host=postgres
