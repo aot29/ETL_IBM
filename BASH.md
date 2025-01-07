@@ -1,4 +1,4 @@
-# Some unseful BASH coomns
+# Some unseful BASH columns
 
 Extract chars
 
