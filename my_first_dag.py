@@ -1,7 +1,7 @@
 from datetime import timedelta
 from airflow.models import DAG
 from airflow.operators.python import PythonOperator
-from airflow.utils.dates impor days_ago
+from airflow.utils.dates import days_ago
 
 # paths
 input_file = '/etc/passwd'
