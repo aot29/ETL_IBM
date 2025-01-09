@@ -61,6 +61,13 @@ dag = DAG(
 )
 
 # Tasks definitions
+
+download = BashOperator(
+  task_id='download',
+  bash_command='wget ' + input_url,
+  dag=dag
+)
+
 execute_extract = PythonOperator(
   task_id='extract',
   python_callable=extract,
@@ -86,4 +93,5 @@ execute_check = PythonOperator(
 )
 
 # Task pipeline
-execute_extract >> execute_transform >> execute_load >> execute_check
+# execute_extract >> execute_transform >> execute_load >> execute_check
+download
